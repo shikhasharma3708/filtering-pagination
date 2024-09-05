@@ -20,6 +20,7 @@ Running the Server
 To start the server, use the following command:
 node server.js
 The server will start running on http://localhost:3002.
+This project is hosted on "Render" - https://filtering-pagination.onrender.com/
 
 API Endpoints
 Get Filtered and Paginated Data
@@ -37,25 +38,19 @@ Example Requests:
 
 Get the first page of data with 3 items per page:
 
-bash
-Copy code
 http://localhost:3000/data?page=1&limit=3
+https://filtering-pagination.onrender.com/data?page=1&limit=3
+
 Get the second page of data with 2 items per page:
 
-bash
-Copy code
 http://localhost:3000/data?page=2&limit=2
 Get data filtered by category A:
 
-bash
-Copy code
 http://localhost:3000/data?category=A
+https://filtering-pagination.onrender.com/data?category=A
 Response:
 
 The response will be a JSON object containing the paginated and filtered data:
-
-json
-Copy code
 {
   "page": 1,
   "limit": 3,
@@ -67,9 +62,7 @@ Copy code
   ]
 }
 Project Structure
-go
-Copy code
-sample-node-server/
+
 ├── node_modules/
 ├── server.js
 ├── package.json
